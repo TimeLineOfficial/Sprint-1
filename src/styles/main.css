@@ -1,0 +1,21 @@
+/* ==========================================
+   CENTRAL CSS MANIFEST
+   ========================================== */
+
+@import './variables.css';
+@import './reset.css';
+@import './components/buttons.css';
+@import './components/nav.css';
+@import './components/hero.css';
+@import './components/dashboard-preview.css';
+@import './components/features.css';
+@import './components/pricing.css';
+@import './components/audit.css';
+@import './components/footer.css';
+
+/* Utility Section Spacing */
+.u-section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}

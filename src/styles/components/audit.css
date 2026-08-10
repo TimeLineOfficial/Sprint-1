@@ -1,0 +1,130 @@
+/* ==========================================
+   LIGHTHOUSE 100 QA AUDIT COMPONENT (BEM)
+   ========================================== */
+
+.c-audit {
+  padding: var(--space-3xl) var(--space-lg);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.c-audit__card {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(139, 92, 246, 0.05));
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.c-audit__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+.c-audit__badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.375rem 0.875rem;
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.c-audit__title {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.c-audit__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+/* Lighthouse Score Ring Grid */
+.c-audit__scores-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.c-audit-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  transition: transform var(--transition-normal);
+}
+
+.c-audit-score:hover {
+  transform: scale(1.04);
+}
+
+.c-audit-score__circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: var(--radius-full);
+  border: 5px solid var(--color-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--color-success);
+  background-color: var(--color-success-bg);
+  box-shadow: 0 0 15px var(--color-success-bg);
+}
+
+.c-audit-score__label {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Technical Checklist Grid */
+.c-audit__checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.c-audit__check-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.c-audit__check-icon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+@media (max-width: 767.98px) {
+  .c-audit__scores-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

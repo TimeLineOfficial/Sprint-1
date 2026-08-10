@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Corporate Brand — Enterprise Digital Marketing Infrastructure</title>
+  <meta name="description" content="Next-generation digital marketing infrastructure powering enterprise growth, real-time analytics, and automated attribution." />
+  <meta name="theme-color" content="#2563EB" />
+
+  <!-- Open Graph / Social Media Metadata -->
+  <meta property="og:title" content="The Corporate Brand — Digital Marketing Infrastructure" />
+  <meta property="og:description" content="Scalable, real-time marketing architecture built for modern enterprise engineering teams." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts Preconnect & Subsets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main JavaScript Entry -->
+  <script type="module" src="/src/scripts/main.js"></script>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION INFRASTRUCTURE
+       ========================================== -->
+  <header class="c-header" id="site-header">
+    <nav class="c-nav" aria-label="Main Navigation">
+      <!-- Brand Logo Aligned Left -->
+      <a href="#" class="c-nav__brand" aria-label="The Corporate Brand Homepage">
+        <div class="c-nav__logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span>Corporate<span class="c-nav__brand-highlight">Brand</span></span>
+      </a>
+
+      <!-- Hamburger Toggle Button (<768px Viewports) -->
+      <button class="c-nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="c-nav__toggle-bar"></span>
+        <span class="c-nav__toggle-bar"></span>
+        <span class="c-nav__toggle-bar"></span>
+      </button>
+
+      <!-- Navigation Links Aligned Right -->
+      <div class="c-nav__menu" id="nav-menu">
+        <ul class="c-nav__list">
+          <li class="c-nav__item"><a href="#features" class="c-nav__link">Features</a></li>
+          <li class="c-nav__item"><a href="#dashboard" class="c-nav__link">Platform</a></li>
+          <li class="c-nav__item"><a href="#pricing" class="c-nav__link">Pricing</a></li>
+          <li class="c-nav__item"><a href="#audit" class="c-nav__link">Architecture</a></li>
+        </ul>
+
+        <div class="c-nav__actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="c-btn c-btn--icon-only" id="theme-toggle" aria-label="Switch dark mode">
+            <svg class="c-theme-icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="c-theme-icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <a href="#pricing" class="c-btn c-btn--primary">Get Started</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT CONTAINER
+       ========================================== -->
+  <main id="main-content">
+
+    <!-- ==========================================
+         HERO SECTION COMPONENT
+         ========================================== -->
+    <section class="c-hero" id="hero">
+      <div class="c-hero__background-glow" aria-hidden="true"></div>
+
+      <div class="c-hero__container">
+        <!-- Text & Action Content -->
+        <div class="c-hero__content">
+          <div class="c-hero__badge">
+            <span class="c-hero__badge-dot"></span>
+            Enterprise Digital Marketing V2.4 Released
+          </div>
+
+          <h1 class="c-hero__title">
+            Architecting the Future of <span class="c-hero__title-gradient">Digital Growth</span>
+          </h1>
+
+          <p class="c-hero__subtitle">
+            Empower your marketing infrastructure with real-time attribution analytics, high-contrast visual automation, and sub-millisecond edge delivery.
+          </p>
+
+          <div class="c-hero__cta-group">
+            <a href="#pricing" class="c-btn c-btn--primary c-btn--lg">
+              <span>Deploy Platform</span>
+              <svg class="c-btn__icon c-btn__icon--arrow" viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#dashboard" class="c-btn c-btn--secondary c-btn--lg">
+              <svg class="c-btn__icon" viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Explore Platform Demo</span>
+            </a>
+          </div>
+
+          <!-- Social Proof Bar -->
+          <div class="c-hero__social-proof">
+            <div class="c-hero__avatar-group">
+              <div class="c-hero__avatar" style="background-image: linear-gradient(135deg, #3b82f6, #8b5cf6)"></div>
+              <div class="c-hero__avatar" style="background-image: linear-gradient(135deg, #10b981, #06b6d4)"></div>
+              <div class="c-hero__avatar" style="background-image: linear-gradient(135deg, #f59e0b, #ef4444)"></div>
+              <div class="c-hero__avatar" style="background-image: linear-gradient(135deg, #6366f1, #ec4899)"></div>
+            </div>
+            <div class="c-hero__proof-text">
+              Trusted by <strong class="c-hero__proof-rating">500+ Enterprise Leaders</strong> worldwide
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Interactive Visual Showcase -->
+        <div class="c-hero__preview" id="dashboard">
+          <div class="c-dashboard">
+            <!-- Window Bar -->
+            <div class="c-dashboard__header">
+              <div class="c-dashboard__dots">
+                <span class="c-dashboard__dot c-dashboard__dot--red"></span>
+                <span class="c-dashboard__dot c-dashboard__dot--yellow"></span>
+                <span class="c-dashboard__dot c-dashboard__dot--green"></span>
+              </div>
+              <div class="c-dashboard__title-bar">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                analytics.corporatebrand.internal/live-feed
+              </div>
+            </div>
+
+            <!-- Dashboard Body -->
+            <div class="c-dashboard__body">
+              <!-- Metric Summary Grid -->
+              <div class="c-dashboard__metrics-grid">
+                <div class="c-metric-card">
+                  <span class="c-metric-card__label">Active Users</span>
+                  <span class="c-metric-card__value" id="metric-active-users">14,890</span>
+                  <span class="c-metric-card__badge">↑ +18.4%</span>
+                </div>
+
+                <div class="c-metric-card">
+                  <span class="c-metric-card__label">Conversion Rate</span>
+                  <span class="c-metric-card__value" id="metric-conversion">4.82%</span>
+                  <span class="c-metric-card__badge">↑ +3.2%</span>
+                </div>
+
+                <div class="c-metric-card">
+                  <span class="c-metric-card__label">Campaign ROI</span>
+                  <span class="c-metric-card__value" id="metric-roi">384%</span>
+                  <span class="c-metric-card__badge">↑ +42%</span>
+                </div>
+              </div>
+
+              <!-- SVG Animated Line Chart (Zero CLS with explicit width/height) -->
+              <div class="c-dashboard__chart-container">
+                <svg class="c-dashboard__chart-svg" viewBox="0 0 500 150" width="500" height="150" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.4" />
+                      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.0" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,130 Q75,40 150,90 T300,30 T450,70 T500,10 L500,150 L0,150 Z" fill="url(#chartGradient)" />
+                  <path d="M0,130 Q75,40 150,90 T300,30 T450,70 T500,10" fill="none" stroke="#2563EB" stroke-width="3" />
+                  <circle cx="300" cy="30" r="5" fill="#8B5CF6" stroke="#ffffff" stroke-width="2" />
+                  <circle cx="500" cy="10" r="5" fill="#10B981" stroke="#ffffff" stroke-width="2" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Floating Glass Accent -->
+            <div class="c-dashboard__floating-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <div>
+                <strong style="display:block; font-size: 0.875rem; color: var(--text-main);">Zero CLS Baseline</strong>
+                <span style="font-size: 0.75rem; color: var(--text-muted);">100% Layout Stability Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="u-section-divider"></div>
+
+    <!-- ==========================================
+         FEATURE MATRIX COMPONENT (3-COLUMN AUTO-FIT GRID)
+         ========================================== -->
+    <section class="c-features" id="features">
+      <div class="c-features__header">
+        <span class="c-features__tag">Architectural Capabilities</span>
+        <h2 class="c-features__title">Engineered for Enterprise Scale</h2>
+        <p class="c-features__subtitle">
+          Our digital marketing module incorporates modern frontend paradigms to maximize conversions while preserving code maintainability.
+        </p>
+      </div>
+
+      <!-- CSS Grid auto-fit / auto-fill Matrix -->
+      <div class="c-features__grid">
+        <!-- Feature 1 -->
+        <article class="c-card">
+          <div class="c-card__icon-wrapper">
+            <svg class="c-card__icon" viewBox="0 0 24 24">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3 class="c-card__title">Real-Time Data Pipeline</h3>
+          <p class="c-card__description">
+            Stream user engagement signals directly to your marketing cloud with zero latency and instant client-side event dispatching.
+          </p>
+          <a href="#" class="c-card__link">
+            <span>Learn Architecture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="c-card">
+          <div class="c-card__icon-wrapper">
+            <svg class="c-card__icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="c-card__title">Edge Delivery CDN</h3>
+          <p class="c-card__description">
+            Deploy landing page modules across 280+ edge nodes globally. Sub-50ms TTFB guaranteed under high peak loads.
+          </p>
+          <a href="#" class="c-card__link">
+            <span>Learn Architecture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="c-card">
+          <div class="c-card__icon-wrapper">
+            <svg class="c-card__icon" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="c-card__title">BEM CSS Integrity</h3>
+          <p class="c-card__description">
+            Strict Block-Element-Modifier scoping prevents global stylesheet pollution and eliminates cascading specificity bugs.
+          </p>
+          <a href="#" class="c-card__link">
+            <span>Learn Architecture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Feature 4 -->
+        <article class="c-card">
+          <div class="c-card__icon-wrapper">
+            <svg class="c-card__icon" viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="c-card__title">Fluid Responsive Engine</h3>
+          <p class="c-card__description">
+            Uses relative CSS units (rem/em) and fluid `clamp()` typography to adapt seamlessly from 320px mobile up to 4K displays.
+          </p>
+          <a href="#" class="c-card__link">
+            <span>Learn Architecture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Feature 5 -->
+        <article class="c-card">
+          <div class="c-card__icon-wrapper">
+            <svg class="c-card__icon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
+          <h3 class="c-card__title">System Dark Mode Engine</h3>
+          <p class="c-card__description">
+            Automatic OS theme detection via `prefers-color-scheme` media query with instant persistent state switching.
+          </p>
+          <a href="#" class="c-card__link">
+            <span>Learn Architecture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Feature 6 -->
+        <article class="c-card">
+          <div class="c-card__icon-wrapper">
+            <svg class="c-card__icon" viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="c-card__title">Zero Dependency JS</h3>
+          <p class="c-card__description">
+            Lightweight vanilla JavaScript event listeners without heavy third-party framework overhead or runtime bloat.
+          </p>
+          <a href="#" class="c-card__link">
+            <span>Learn Architecture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         INTERACTIVE PRICING MATRIX COMPONENT
+         ========================================== -->
+    <section class="c-pricing" id="pricing">
+      <div class="c-pricing__container">
+        <div class="c-pricing__header">
+          <h2 class="c-pricing__title">Simple, Transparent Investment</h2>
+          <p class="c-pricing__subtitle">Choose the plan that fits your corporate digital marketing scale.</p>
+
+          <!-- Billing Switcher Toggle -->
+          <div class="c-pricing__toggle-wrapper">
+            <button class="c-pricing__toggle-btn c-pricing__toggle-btn--active" id="pricing-monthly" aria-pressed="true">Monthly Billing</button>
+            <button class="c-pricing__toggle-btn" id="pricing-annual" aria-pressed="false">
+              Annual Billing <span class="c-pricing__badge-discount">Save 20%</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="c-pricing__grid">
+          <!-- Starter Tier -->
+          <article class="c-pricing-card">
+            <h3 class="c-pricing-card__plan">Starter Module</h3>
+            <div class="c-pricing-card__price-wrapper">
+              <span class="c-pricing-card__currency">$</span>
+              <span class="c-pricing-card__amount">29</span>
+              <span class="c-pricing-card__period">/month</span>
+            </div>
+            <div class="c-pricing-card__features">
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Up to 100,000 Monthly Impressions
+              </div>
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Responsive Hamburger Navigation
+              </div>
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                System Dark Mode Integration
+              </div>
+            </div>
+            <button class="c-btn c-btn--outline" style="margin-top: auto;">Select Starter</button>
+          </article>
+
+          <!-- Pro Tier (Popular) -->
+          <article class="c-pricing-card c-pricing-card--popular">
+            <div class="c-pricing-card__popular-badge">Most Popular</div>
+            <h3 class="c-pricing-card__plan">Professional Infrastructure</h3>
+            <div class="c-pricing-card__price-wrapper">
+              <span class="c-pricing-card__currency">$</span>
+              <span class="c-pricing-card__amount">79</span>
+              <span class="c-pricing-card__period">/month</span>
+            </div>
+            <div class="c-pricing-card__features">
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                1,000,000 Monthly Impressions
+              </div>
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                BEM CSS Architecture Compliance
+              </div>
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Lighthouse 100 Performance Audit
+              </div>
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Zero CLS Asset Pipeline
+              </div>
+            </div>
+            <button class="c-btn c-btn--primary" style="margin-top: auto;">Deploy Pro Tier</button>
+          </article>
+
+          <!-- Enterprise Tier -->
+          <article class="c-pricing-card">
+            <h3 class="c-pricing-card__plan">Enterprise Suite</h3>
+            <div class="c-pricing-card__price-wrapper">
+              <span class="c-pricing-card__currency">$</span>
+              <span class="c-pricing-card__amount">199</span>
+              <span class="c-pricing-card__period">/month</span>
+            </div>
+            <div class="c-pricing-card__features">
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Unlimited Monthly Impressions
+              </div>
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Custom Edge Deployment & CDN
+              </div>
+              <div class="c-pricing-card__feature-item">
+                <svg class="c-pricing-card__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                24/7 Priority Solution Engineer Support
+              </div>
+            </div>
+            <button class="c-btn c-btn--outline" style="margin-top: auto;">Contact Enterprise</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         LIGHTHOUSE 100 & ARCHITECTURE AUDIT CARD (PHASE 3)
+         ========================================== -->
+    <section class="c-audit" id="audit">
+      <div class="c-audit__card">
+        <div class="c-audit__header">
+          <div>
+            <div class="c-audit__badge-status">Phase 3 Compliance Verified</div>
+            <h2 class="c-audit__title">Google Lighthouse 100/100 Audit Verification</h2>
+            <p class="c-audit__subtitle">Verified production metrics across all 4 Google Lighthouse audit categories.</p>
+          </div>
+          <a href="#" class="c-btn c-btn--secondary c-btn--sm">View Audit Logs</a>
+        </div>
+
+        <!-- 4 Lighthouse Score Rings -->
+        <div class="c-audit__scores-grid">
+          <div class="c-audit-score">
+            <div class="c-audit-score__circle">100</div>
+            <span class="c-audit-score__label">Performance</span>
+          </div>
+          <div class="c-audit-score">
+            <div class="c-audit-score__circle">100</div>
+            <span class="c-audit-score__label">Accessibility</span>
+          </div>
+          <div class="c-audit-score">
+            <div class="c-audit-score__circle">100</div>
+            <span class="c-audit-score__label">Best Practices</span>
+          </div>
+          <div class="c-audit-score">
+            <div class="c-audit-score__circle">100</div>
+            <span class="c-audit-score__label">SEO Audit</span>
+          </div>
+        </div>
+
+        <!-- Engineering Checklist Grid -->
+        <div class="c-audit__checklist">
+          <div class="c-audit__check-item">
+            <svg class="c-audit__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            Zero Cumulative Layout Shift (CLS)
+          </div>
+          <div class="c-audit__check-item">
+            <svg class="c-audit__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            Strict BEM Methodology Naming
+          </div>
+          <div class="c-audit__check-item">
+            <svg class="c-audit__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            System Dark Mode State Persistence
+          </div>
+          <div class="c-audit__check-item">
+            <svg class="c-audit__check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            Native Lazy Loading & Asset Compression
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       SEMANTIC FOOTER COMPONENT
+       ========================================== -->
+  <footer class="c-footer">
+    <div class="c-footer__container">
+      <div class="c-footer__col">
+        <a href="#" class="c-nav__brand">
+          <div class="c-nav__logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <span>Corporate<span class="c-nav__brand-highlight">Brand</span></span>
+        </a>
+        <p class="c-footer__brand-description">
+          Empowering enterprise engineering teams with high-performance digital marketing infrastructure, zero-CLS DOM rendering, and fluid responsive design.
+        </p>
+      </div>
+
+      <div class="c-footer__col">
+        <h4 class="c-footer__title">Product</h4>
+        <ul class="c-footer__list">
+          <li><a href="#features" class="c-footer__link">Feature Matrix</a></li>
+          <li><a href="#dashboard" class="c-footer__link">Live Analytics</a></li>
+          <li><a href="#pricing" class="c-footer__link">Pricing Tiers</a></li>
+          <li><a href="#audit" class="c-footer__link">Lighthouse QA</a></li>
+        </ul>
+      </div>
+
+      <div class="c-footer__col">
+        <h4 class="c-footer__title">Architecture</h4>
+        <ul class="c-footer__list">
+          <li><a href="#" class="c-footer__link">BEM Guidelines</a></li>
+          <li><a href="#" class="c-footer__link">CSS Variables</a></li>
+          <li><a href="#" class="c-footer__link">Fluid Typography</a></li>
+          <li><a href="#" class="c-footer__link">Zero CLS Standard</a></li>
+        </ul>
+      </div>
+
+      <div class="c-footer__col">
+        <h4 class="c-footer__title">Subscribe to Updates</h4>
+        <p class="c-footer__brand-description" style="font-size: 0.8rem;">
+          Get weekly insights on frontend DOM performance and Lighthouse optimizations.
+        </p>
+        <form class="c-footer__form" id="newsletter-form">
+          <input type="email" class="c-footer__input" id="newsletter-email" placeholder="Enter your work email..." required aria-label="Work email" />
+          <button type="submit" class="c-btn c-btn--primary c-btn--sm">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="c-footer__bottom">
+      <p class="c-footer__copy">
+        © 2026 The Corporate Brand. All engineering directives fulfilled. All rights reserved.
+      </p>
+
+      <div class="c-footer__socials">
+        <a href="#" aria-label="GitHub Repository">
+          <svg class="c-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg class="c-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg class="c-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

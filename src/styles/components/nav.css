@@ -1,0 +1,199 @@
+/* ==========================================
+   NAVBAR COMPONENT (BEM)
+   ========================================== */
+
+.c-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.c-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-max-width);
+  height: var(--navbar-height);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Logo Element */
+.c-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-family-display);
+  font-weight: 800;
+  font-size: var(--font-size-xl);
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.c-nav__logo-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.c-nav__brand-highlight {
+  color: var(--color-primary);
+}
+
+/* Nav Menu Links */
+.c-nav__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.c-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.c-nav__link {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.c-nav__link:hover,
+.c-nav__link--active {
+  color: var(--text-main);
+}
+
+.c-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transition: width var(--transition-normal);
+  border-radius: 2px;
+}
+
+.c-nav__link:hover::after,
+.c-nav__link--active::after {
+  width: 100%;
+}
+
+/* Right-side Actions */
+.c-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* Hamburger Toggle Button */
+.c-nav__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.375rem;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  z-index: 101;
+}
+
+.c-nav__toggle-bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-main);
+  border-radius: 2px;
+  transition: transform var(--transition-normal), opacity var(--transition-normal);
+}
+
+/* Active Hamburger Animation */
+.c-nav__toggle[aria-expanded="true"] .c-nav__toggle-bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.c-nav__toggle[aria-expanded="true"] .c-nav__toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.c-nav__toggle[aria-expanded="true"] .c-nav__toggle-bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Mobile Responsive Drawer Breakpoint (<768px) */
+@media (max-width: 767.98px) {
+  .c-nav__toggle {
+    display: flex;
+  }
+
+  .c-nav__menu {
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--navbar-height));
+    background-color: var(--bg-surface);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: var(--space-xl);
+    gap: var(--space-xl);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--transition-slow), opacity var(--transition-slow), visibility var(--transition-slow);
+    box-shadow: var(--shadow-xl);
+    border-bottom: 1px solid var(--border-color);
+    overflow-y: auto;
+  }
+
+  .c-nav__menu--open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .c-nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+    width: 100%;
+  }
+
+  .c-nav__link {
+    font-size: var(--font-size-lg);
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .c-nav__actions {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-md);
+  }
+
+  .c-nav__actions .c-btn {
+    width: 100%;
+  }
+}
