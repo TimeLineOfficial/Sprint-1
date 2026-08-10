@@ -33,7 +33,7 @@
   --bg-main: hsl(210, 40%, 98%);
   --bg-surface: hsl(0, 0%, 100%);
   --bg-surface-elevated: hsl(210, 40%, 96%);
-  --bg-glass: rgba(255, 255, 255, 0.75);
+  --bg-glass: rgba(255, 255, 255, 0.85);
   
   --text-main: hsl(222, 47%, 11%);
   --text-muted: hsl(215, 16%, 47%);
@@ -88,11 +88,13 @@
 /* ==========================================
    DARK MODE OVERRIDES
    ========================================== */
-html[data-theme="dark"] {
+:root[data-theme="dark"],
+html[data-theme="dark"],
+[data-theme="dark"] {
   --bg-main: hsl(222, 47%, 7%);
   --bg-surface: hsl(222, 40%, 11%);
   --bg-surface-elevated: hsl(222, 35%, 15%);
-  --bg-glass: rgba(17, 24, 39, 0.8);
+  --bg-glass: rgba(17, 24, 39, 0.85);
 
   --text-main: hsl(210, 40%, 98%);
   --text-muted: hsl(215, 20%, 65%);
